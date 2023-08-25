@@ -41,7 +41,7 @@ When we insert new data into the database, we require some specific constraints 
 
 ---
 
-### 3) What is the different languages present in DBMS?
+### 5) What is the different languages present in DBMS?
 
 - **DDL(Data Definition Language)**:  It contains commands which are required to define the database. \ 
 E.g., CREATE, ALTER, DROP, TRUNCATE, RENAME, etc.
@@ -54,7 +54,7 @@ E.g., COMMIT, ROLLBACK, and SAVEPOINT.
 
 ---
 
-### 4) ACID properties in DBMS?
+### 6) ACID properties in DBMS?
 
 <img src="/assets/images/ACID.png" width="600" height="200">
 
@@ -67,7 +67,7 @@ ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS thes
 
 ---
 
-### 5) Difference between the DELETE and TRUNCATE command in a DBMS?
+### 7) Difference between the DELETE and TRUNCATE command in a DBMS?
 
 - DELETE Command:
     - It removes rows from a table one by one with transaction logging
@@ -79,7 +79,7 @@ ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS thes
  
 ---
 
-### 6) What is meant by Normalization and Denormalization?
+### 8) What is meant by Normalization and Denormalization?
 
 <img src="/assets/images/D&N.webp" width="600" height="200">
 
@@ -90,7 +90,7 @@ ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS thes
 
 ---
 
-### Different types of Normalization forms in a DBMS?
+### 9) Different types of Normalization forms in a DBMS?
 
 - 1NF: It is known as the first normal form and is the simplest type of normalization that you can implement in a database. A table to be in its first normal form should satisfy the following conditions:
     - Every column must have a single value and should be atomic.
@@ -114,12 +114,12 @@ ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS thes
 ---
 
 
-### What is an Entity-Relationship Diagram (ER-Diagram)?  
+### 10) What is an Entity-Relationship Diagram (ER-Diagram)?  
 An ER-Diagram is a visual representation of the relationships among entities in a database, showing how different tables are connected.
 
 ---
 
-### Different types of keys in a database?
+### 11) Different types of keys in a database?
 
 - **Primary key**: The Primary key is an attribute in a table that can uniquely identify each record in a table. It is compulsory for every table.
 - **Unique Key**: The unique key is very similar to the primary key except that primary keys don’t allow NULL values in the column but unique keys allow them.
@@ -127,7 +127,7 @@ An ER-Diagram is a visual representation of the relationships among entities in 
 
 ---
 
-### What is a lock. Explain the difference between a shared lock and an exclusive lock?
+### 12) What is a lock. Explain the difference between a shared lock and an exclusive lock?
 
 A database lock is a mechanism to protect a shared piece of data from getting updated by two or more database users at the same time. When a single database user or session has acquired a lock then no other database user or session can modify that data until the lock is released.
 
@@ -137,7 +137,7 @@ A database lock is a mechanism to protect a shared piece of data from getting up
 
 ---
 
-### What are Views in DBMS?
+### 13) What are Views in DBMS?
 
 A view is a virtual table that is derived from one or more base tables or other views. It does not store any data itself but represents a tailored, pre-defined query that simplifies data retrieval. Views act as a layer of abstraction over the underlying tables, providing a more user-friendly and secure way to interact with the data.
 
@@ -150,7 +150,7 @@ A view is a virtual table that is derived from one or more base tables or other 
 
 ---
 
-### What is a Join? List its different types.
+### 14) What is a Join? List its different types.
 
 The SQL Join clause is used to combine records (rows) from two or more tables in a SQL database based on a related column between the two.
 
@@ -165,17 +165,17 @@ There are four different types of JOINs in SQL:
 
 ---
 
-### What is a Self-Join?
+### 15) What is a Self-Join?
 A self JOIN is a case of regular join where a table is joined to itself based on some relation between its own column(s). Self-join uses the INNER JOIN or LEFT JOIN clause and a table alias is used to assign different names to the table within the query.
 
 ---
 
-### What is a Cross-Join?
+### 16) What is a Cross-Join?
 Cross join can be defined as a cartesian product of the two tables included in the join. The table after join contains the same number of rows as in the cross-product of the number of rows in the two tables. If a WHERE clause is used in cross join then the query will work like an INNER JOIN.
 
 ---
 
-### What is an Index? Difference between Clustered and Non-Clustered Index?
+### 17) What is an Index? Difference between Clustered and Non-Clustered Index?
 
 A database index is a data structure that provides a quick lookup of data in a column or columns of a table. It enhances the speed of operations accessing data from a database table at the cost of additional writes and memory to maintain the index data structure.
 
