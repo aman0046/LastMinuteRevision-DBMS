@@ -14,8 +14,30 @@ A Database is an organized, consistent, and logical collection of data that can 
 
 ---
 
-### 2) Explain the difference between a database and a DBMS?
+### 3) Explain the difference between a database and a DBMS?
 A database is a collection of related data, while a DBMS is software used to manage, store, and retrieve data efficiently from the database.
+
+---
+
+### 4) Advantages of DBMS over File Systems?
+
+<img src="/assets/images/ADF.png" width="600" height="200">
+
+- **Data Redundancy and Inconsistency**: \
+Redundancy means repeating the data in a system. In a normal file system, there is a high chance that there can be various files of the same data used by different users for specific purposes. If any user changes the data in its files, then the changes are not reflected in all files. This creates inconsistency in the data, and it may lead to the failure of the system. But in the DBMS, there is only one repository of data, and multiple users can use it. If any user changes the data, then it is reflected to each user as they are using the same repository.
+
+- **Data Sharing**: \
+In the normal file system, data sharing is too difficult because file sharing is a complex task. In DBMS, all the data is centralized, so data sharing is a very easy task.
+
+- **Data Concurrency**: \
+When more than one user accesses the database simultaneously, then it is called concurrency. In a file system, when multiple users are using the files at the same time, then there may be a chance of anomalies in the data due to changes, and it does not provide any method to detect anomalies. But in DBMS, we have a locking system to detect the anomalies so we can protect the data.
+
+- **Data Searching**: \
+To search the data in a file system, we have to write a specific program and run it. In DBMS, we have query languages by which we can write small queries to get the data we want from the database. We can use various query languages, like MySQL, Oracle, etc., for a database to search and retrieve the data.
+
+- **Data Integrity**: \
+When we insert new data into the database, we require some specific constraints on the data like integer or not null, etc. The file system does not provide any system to check the constraints, whereas DBMS has the functionality to check the constraints on the data, and it allows user defined data types.
+
 
 ---
 
@@ -122,6 +144,44 @@ A view is a virtual table that is derived from one or more base tables or other 
 - **Data Independence**: If the underlying schema changes, views can remain the same, and applications using the views will not be affected.
 
 ---
+
+### What is a Join? List its different types.
+
+The SQL Join clause is used to combine records (rows) from two or more tables in a SQL database based on a related column between the two.
+
+There are four different types of JOINs in SQL:
+
+- **INNER JOIN**: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
+- **LEFT OUTER JOIN**: Retrieves all the records/rows from the left and the matched records/rows from the right table.
+- **RIGHT OUTER JOIN**: Retrieves all the records/rows from the right and the matched records/rows from the left table.
+- **FULL OUTER JOIN**: Retrieves all the records where there is a match in either the left or right table.
+
+---
+
+### What is a Self-Join?
+A self JOIN is a case of regular join where a table is joined to itself based on some relation between its own column(s). Self-join uses the INNER JOIN or LEFT JOIN clause and a table alias is used to assign different names to the table within the query.
+
+---
+
+### What is a Cross-Join?
+Cross join can be defined as a cartesian product of the two tables included in the join. The table after join contains the same number of rows as in the cross-product of the number of rows in the two tables. If a WHERE clause is used in cross join then the query will work like an INNER JOIN.
+
+---
+
+### What is an Index? Difference between Clustered and Non-Clustered Index?
+
+A database index is a data structure that provides a quick lookup of data in a column or columns of a table. It enhances the speed of operations accessing data from a database table at the cost of additional writes and memory to maintain the index data structure.
+
+#### Difference between Clustered and Non-Clustered Index
+
+- Clustered index modifies the way records are stored in a database based on the indexed column. A non-clustered index creates a separate entity within the table which references the original table.
+- Clustered index is used for easy and speedy retrieval of data from the database, whereas, fetching records from the non-clustered index is relatively slower.
+- In SQL, a table can have a single clustered index whereas it can have multiple non-clustered indexes.
+
+
+---
+
+
 
 ### Thanks for Reading 
 
