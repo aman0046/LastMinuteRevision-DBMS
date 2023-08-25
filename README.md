@@ -4,6 +4,8 @@ Here we have last minute revision notes of DBMS. These questions will familiariz
 
 ## Most Asked DBMS Interview Questions
 
+<img src="/assets/images/DBMS.png" width="600" height="200">
+
 ### 1) What is DBMS?
 A DBMS is software that manages databases, providing an interface to store, retrieve, and manipulate data efficiently and securely.
 
@@ -20,8 +22,6 @@ A database is a collection of related data, while a DBMS is software used to man
 ---
 
 ### 4) Advantages of DBMS over File Systems?
-
-<img src="/assets/images/ADF.jpg" width="600" height="200">
 
 - **Data Redundancy and Inconsistency**: \
 Redundancy means repeating the data in a system. In a normal file system, there is a high chance that there can be various files of the same data used by different users for specific purposes. If any user changes the data in its files, then the changes are not reflected in all files. This creates inconsistency in the data, and it may lead to the failure of the system. But in the DBMS, there is only one repository of data, and multiple users can use it. If any user changes the data, then it is reflected to each user as they are using the same repository.
@@ -55,6 +55,9 @@ E.g., COMMIT, ROLLBACK, and SAVEPOINT.
 ---
 
 ### 4) ACID properties in DBMS?
+
+<img src="/assets/images/ACID.png" width="600" height="200">
+
 ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS these are those properties that ensure a safe and secure way of sharing data among multiple users.
 
 - **Atomicity**: This property reflects the concept of either executing the whole query or executing nothing at all, which implies that if an update occurs in a database then that update should either be reflected in the whole database or should not be reflected at all.
@@ -77,6 +80,8 @@ ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS thes
 ---
 
 ### 6) What is meant by Normalization and Denormalization?
+
+<img src="/assets/images/D&N.webp" width="600" height="200">
 
 **Normalization** is a process of reducing redundancy by organizing the data into multiple tables. Normalization leads to better usage of disk spaces and makes it easier to maintain the integrity of the database.  
 
@@ -150,6 +155,8 @@ A view is a virtual table that is derived from one or more base tables or other 
 The SQL Join clause is used to combine records (rows) from two or more tables in a SQL database based on a related column between the two.
 
 There are four different types of JOINs in SQL:
+
+<img src="/assets/images/JOIN.png" width="600" height="200">
 
 - **INNER JOIN**: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
 - **LEFT OUTER JOIN**: Retrieves all the records/rows from the left and the matched records/rows from the right table.
