@@ -123,6 +123,14 @@ A view is a virtual table that is derived from one or more base tables or other 
 
 ---
 
+### Thanks for Reading 
+
+<img src="/assets/images/save.png" width="600" height="200">
+
+**For any doubt, feel free to connect on Linkedin and Instagram**
+
+> [Linkedin](https://www.linkedin.com/in/amanchowdhury046/) \
+[Instagram](https://www.instagram.com/aman_chowdhury_046/)
 
 
 
