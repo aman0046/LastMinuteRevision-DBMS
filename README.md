@@ -21,7 +21,7 @@ A database is a collection of related data, while a DBMS is software used to man
 
 ### 4) Advantages of DBMS over File Systems?
 
-<img src="/assets/images/ADF.png" width="600" height="200">
+<img src="/assets/images/ADF.jpg" width="600" height="200">
 
 - **Data Redundancy and Inconsistency**: \
 Redundancy means repeating the data in a system. In a normal file system, there is a high chance that there can be various files of the same data used by different users for specific purposes. If any user changes the data in its files, then the changes are not reflected in all files. This creates inconsistency in the data, and it may lead to the failure of the system. But in the DBMS, there is only one repository of data, and multiple users can use it. If any user changes the data, then it is reflected to each user as they are using the same repository.
